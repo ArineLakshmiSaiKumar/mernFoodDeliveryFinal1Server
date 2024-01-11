@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const {Schema} = mongoose;
 const app = express()
 const {body,validationResult} = require('express-validator')
-const port = 5000
+const port = process.env.PORT || 5000
 const jwtSec = "qwertyuiopasdfghjklzxcvbnm"
 const mongoURI = 'mongodb+srv://root:root@merncluster.xo3u5rg.mongodb.net/food-mern-finaldb?retryWrites=true&w=majority'
 app.use(cors())
